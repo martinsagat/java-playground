@@ -22,3 +22,5 @@ run-jar:
 	cd target && \
 	java -jar quickstart-0.0.1-SNAPSHOT.jar
 
+start:
+	SERVER_PORT=8000 ./mvnw spring-boot:run -X

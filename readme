@@ -1,4 +1,4 @@
-# Java
+# Java (with Spring Boot)
 Apache Maven (command line tool) 
 Maven wrapper:
 `mvnw [options] [<goal(s)>] [<phase(s)>]`
@@ -16,6 +16,22 @@ C --> J[3 PACKAGE<br>creates jar or war file]
 C --> K[4 VERIFY<br>test and integration tests]
 A --> D[SITE<br>Where documentation is generated]
 ```
+
+## Spring Boot (Dependency Injection Framework)
+
+### Layers
+
+1. Persistance Layer
+   - handle interactions with database (entities (representing tables in database))
+   - CRUD (Create, Read, Update, Delete)
+2. Service Layer
+   - layer between persistance and presentation layer
+   - business logic etc.
+3. Presentation Layer
+   - Controller
+   - GraphQL API
+   - Websockets API
+   - ...
 
 ## References
 - [Learning YouTube Video](https://www.youtube.com/watch?v=Nv2DERaMx-4)
