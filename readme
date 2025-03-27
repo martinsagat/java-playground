@@ -1,0 +1,22 @@
+# Java
+Apache Maven (command line tool) 
+Maven wrapper:
+`mvnw [options] [<goal(s)>] [<phase(s)>]`
+
+```mermaid
+graph LR
+A[Maven Lifecycles/Phases] --> B[CLEAN<br>removes tmp directories and files]
+B --> E[PRE-CLEAN<br>hook for before cleaning]
+B --> F[CLEAN<br>actual cleaning]
+B --> G[POST-CLEAN<br>hook for after cleaning]
+A --> C[DEFAULT<br>where most useful goals live]
+C --> H[1 COMPILE<br>compiles code into bytecode]
+C --> I[2 TEST<br>unit tests]
+C --> J[3 PACKAGE<br>creates jar or war file]
+C --> K[4 VERIFY<br>test and integration tests]
+A --> D[SITE<br>Where documentation is generated]
+```
+
+## References
+- [Learning YouTube Video](https://www.youtube.com/watch?v=Nv2DERaMx-4)
+- [Apache Maven Standard Directory Structure](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
